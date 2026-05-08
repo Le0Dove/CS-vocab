@@ -1,5 +1,4 @@
 # 02. 线性结构 (Linear Structures)
-
 ### Array / 数组
 - **音标**：/əˈreɪ/
 - **中文**：数组
@@ -7,7 +6,6 @@
 - **说明**：数组支持 O(1) 随机访问（通过索引）；插入/删除需要 O(n) 移动元素；静态数组大小固定，动态数组可扩容
 - **相关**：Dynamic Array（动态数组）、Index（索引）、Linked List（链表）
 - **例句**：Arrays provide O(1) random access but O(n) insertion and deletion.
-
 ### Circular Buffer / 循环缓冲区
 - **音标**：/ˈsɜːrkjələr ˈbʌfər/
 - **中文**：循环缓冲区
@@ -15,27 +13,23 @@
 - **说明**：循环缓冲区高效利用空间，常用于 I/O 缓冲、生产者-消费者模型；避免了元素的物理移动
 - **同义词**：Ring Buffer（环形缓冲区）
 - **相关**：Queue（队列）、Buffer（缓冲区）
-
 ### Circular Linked List / 循环链表
 - **中文**：循环链表
 - **定义**：最后一个节点的 next 指针指向头节点，形成环的链表
 - **说明**：循环链表可以从任意节点遍历整个列表；常用于约瑟夫问题、轮询调度；分为单向循环链表和双向循环链表
 - **相关**：Linked List（链表）、Doubly Linked List（双向链表）
-
 ### Deque / 双端队列
 - **音标**：/dɛk/
 - **中文**：双端队列
 - **定义**：允许在两端进行插入和删除操作的线性数据结构
 - **说明**：Deque 是 Double-Ended Queue 的缩写；支持 push_front、push_back、pop_front、pop_back；可用动态数组或双向链表实现；C++ STL 中的 deque
 - **相关**：Queue（队列）、Stack（栈）
-
 ### Doubly Linked List / 双向链表
 - **音标**：/ˈdʌbli lɪŋkt lɪst/
 - **中文**：双向链表
 - **定义**：每个节点包含指向前驱和后继两个指针的链表
 - **说明**：双向链表支持双向遍历；插入/删除已知节点为 O(1)；但每个节点多一个指针，空间开销大；常用于 LRU Cache
 - **相关**：Singly Linked List（单向链表）、Circular Linked List（循环链表）
-
 ### Dynamic Array / 动态数组
 - **音标**：/daɪˈnæmɪk əˈreɪ/
 - **中文**：动态数组
@@ -43,35 +37,36 @@
 - **说明**：动态数组（如 C++ vector、Java ArrayList、Python list）在容量不足时重新分配更大数组（通常 1.5x 或 2x），拷贝旧元素；均摊插入时间为 O(1)
 - **相关**：Array（数组）、Amortized Analysis（摊还分析）
 - **例句**：Python lists are implemented as dynamic arrays that grow by overallocation.
-
 ### Element / 元素
 - **音标**：/ˈelɪmənt/
 - **中文**：元素
 - **定义**：数据结构中的单个数据项
 - **说明**：数组中的元素通过索引访问；链表中的元素是节点；树中的元素是节点
 - **相关**：Node（节点）、Data（数据）
-
 ### Front / 队首
 - **音标**：/frʌnt/
 - **中文**：队首
 - **定义**：队列中最早插入的元素所在位置
 - **说明**：队列的删除（dequeue）操作在队首进行；队首元素最先被处理
 - **相关**：Queue（队列）、Rear（队尾）
-
 ### Head / 头节点
 - **音标**：/hed/
 - **中文**：头节点
 - **定义**：链表的第一个节点
 - **说明**：头节点是链表的入口；空链表的头指针为 null/None；有时使用哑节点（dummy node）作为头节点简化操作
 - **相关**：Tail（尾节点）、Linked List（链表）
-
 ### Index / 索引
 - **音标**：/ˈɪndeks/
 - **中文**：索引
 - **定义**：数组中元素的位置标识，从 0 或 1 开始
 - **说明**：0-based indexing（C、Java、Python）：第一个元素索引为 0；1-based indexing（MATLAB、R）：第一个元素索引为 1；索引访问数组元素为 O(1)
 - **相关**：Array（数组）、Subscript（下标）
-
+### LIFO / 后进先出
+- **发音**：/ˈlaɪfoʊ/
+- **中文**：后进先出
+- **定义**：Last In First Out 的缩写，最后进入的元素最先离开
+- **说明**：LIFO 是栈的核心特性；类比一叠盘子，只能从顶部取放
+- **相关**：Stack（栈）、FIFO（先进先出）
 ### Linear Search / 线性查找
 - **音标**：/ˈlɪniər sɜːrtʃ/
 - **中文**：线性查找
@@ -80,7 +75,6 @@
 - **同义词**：Sequential Search（顺序查找）
 - **相关**：Binary Search（二分查找）、Search Algorithm（搜索算法）
 - **例句**：Linear search has O(n) time complexity on unsorted arrays.
-
 ### Linked List / 链表
 - **音标**：/lɪŋkt lɪst/
 - **中文**：链表
@@ -88,83 +82,65 @@
 - **说明**：链表分为单向链表、双向链表、循环链表；插入/删除为 O(1)（已知前驱节点），查找为 O(n)；不需要连续内存空间
 - **相关**：Node（节点）、Pointer（指针）、Array（数组）
 - **例句**：Linked lists allow efficient insertion and deletion at any position.
-
-### LIFO / 后进先出
-- **发音**：/ˈlaɪfoʊ/
-- **中文**：后进先出
-- **定义**：Last In First Out 的缩写，最后进入的元素最先离开
-- **说明**：LIFO 是栈的核心特性；类比一叠盘子，只能从顶部取放
-- **相关**：Stack（栈）、FIFO（先进先出）
-
 ### List / 列表
 - **音标**：/lɪst/
 - **中文**：列表
 - **定义**：有序的线性数据结构，元素按顺序排列
 - **说明**：列表可以是数组实现（顺序表）或链表实现；支持插入、删除、查找、遍历操作；Python 中的 list 是动态数组
 - **相关**：Array（数组）、Linked List（链表）
-
 ### Matrix / 矩阵
 - **音标**：/ˈmeɪtrɪks/
 - **中文**：矩阵
 - **定义**：二维数组，由行和列组成的矩形数据排列
 - **说明**：矩阵是二维线性结构；常见操作：转置、乘法、行列式；用于图形学、机器学习、科学计算；稀疏矩阵用特殊结构存储以节省空间
 - **相关**：Array（数组）、2D Array（二维数组）、Sparse Matrix（稀疏矩阵）
-
 ### Multidimensional Array / 多维数组
 - **中文**：多维数组
 - **定义**：具有两个或更多维度的数组，如二维数组、三维数组
 - **说明**：多维数组在内存中通常按行优先（row-major，C/C++）或列优先（column-major，Fortran、MATLAB）连续存储
 - **相关**：Array（数组）、Matrix（矩阵）
-
 ### Next / 后继指针
 - **音标**：/nekst/
 - **中文**：后继指针
 - **定义**：链表节点中指向下一个节点的指针
 - **说明**：单向链表只有一个 next 指针；双向链表还有 prev（前驱）指针
 - **相关**：Pointer（指针）、Linked List（链表）
-
 ### Node / 节点
 - **音标**：/noʊd/
 - **中文**：节点
 - **定义**：数据结构中的基本单元，包含数据和指向其他节点的引用
 - **说明**：链表节点包含数据和 next 指针；树节点包含数据和子节点指针；图节点（顶点）包含数据和边列表
 - **相关**：Vertex（顶点）、Edge（边）、Pointer（指针）
-
 ### Pointer / 指针
 - **音标**：/ˈpɔɪntər/
 - **中文**：指针
 - **定义**：存储内存地址的变量，用于引用数据
 - **说明**：指针是链式结构的基础；C/C++ 中使用显式指针；Java/Python 中使用引用（reference）；空指针（null pointer）表示不指向任何有效地址
 - **相关**：Reference（引用）、Null（空）、Address（地址）
-
 ### Pop / 出栈
 - **音标**：/pɒp/
 - **中文**：出栈
 - **定义**：从栈顶移除元素的操作
 - **说明**：pop 操作后栈大小减 1；对空栈执行 pop 会下溢（underflow）；时间复杂度 O(1)
 - **相关**：Push（入栈）、Stack（栈）、Top（栈顶）
-
 ### Prev / 前驱指针
 - **发音**：/prev/
 - **中文**：前驱指针
 - **定义**：双向链表节点中指向前一个节点的指针
 - **说明**：prev 指针允许双向遍历链表；头节点的 prev 为 null
 - **相关**：Next（后继指针）、Doubly Linked List（双向链表）
-
 ### Priority Queue / 优先队列
 - **音标**：/praɪˈɒrəti kjuː/
 - **中文**：优先队列
 - **定义**：元素按优先级排序，每次取出优先级最高（或最低）元素的队列
 - **说明**：优先队列通常用堆（Heap）实现；插入 O(log n)，取出最大值 O(log n)；应用：任务调度、Dijkstra 算法、哈夫曼编码
 - **相关**：Heap（堆）、Queue（队列）、ADT（抽象数据类型）
-
 ### Push / 入栈
 - **音标**：/pʊʃ/
 - **中文**：入栈
 - **定义**：将元素压入栈顶的操作
 - **说明**：push 操作后新元素成为栈顶；对满栈执行 push 会上溢（overflow）；时间复杂度 O(1)
 - **相关**：Pop（出栈）、Stack（栈）
-
 ### Queue / 队列
 - **音标**：/kjuː/
 - **中文**：队列
@@ -172,56 +148,48 @@
 - **说明**：队列在队尾（rear）插入（enqueue），在队首（front）删除（dequeue）；应用：BFS、任务调度、缓冲；可用数组或链表实现
 - **相关**：FIFO、Stack（栈）、Deque（双端队列）
 - **例句**：A queue follows the FIFO principle: first in, first out.
-
 ### Rear / 队尾
 - **音标**：/rɪər/
 - **中文**：队尾
 - **定义**：队列中最后插入的元素所在位置
 - **说明**：队列的插入（enqueue）操作在队尾进行；队尾元素最后被处理
 - **相关**：Queue（队列）、Front（队首）
-
 ### Sentinel / 哨兵
 - **音标**：/ˈsentɪnl/
 - **中文**：哨兵
 - **定义**：放置在数据结构边界上的特殊节点或值，用于简化边界条件处理
 - **说明**：链表哨兵节点（dummy node）统一了头节点和中间节点的操作；循环中的哨兵值可以提前终止搜索
 - **相关**：Dummy Node（哑节点）、Linked List（链表）
-
 ### Singly Linked List / 单向链表
 - **音标**：/ˈsɪŋɡli lɪŋkt lɪst/
 - **中文**：单向链表
 - **定义**：每个节点只包含一个指向后继节点指针的链表
 - **说明**：单向链表只能单向遍历；每个节点只存储一个指针，空间效率高；插入/删除需要找到前驱节点
 - **相关**：Doubly Linked List（双向链表）、Linked List（链表）
-
 ### Size / 大小
 - **音标**：/saɪz/
 - **中文**：大小
 - **定义**：数据结构中元素的个数
 - **说明**：数组大小通常是固定的容量（capacity），而实际元素个数为长度（length）；动态数组需要区分 size 和 capacity
 - **相关**：Capacity（容量）、Length（长度）
-
 ### Skip List / 跳表
 - **音标**：/skɪp lɪst/
 - **中文**：跳表
 - **定义**：在有序链表上增加多级索引，实现快速查找的概率性数据结构
 - **说明**：跳表平均查找/插入/删除 O(log n)；通过随机提升节点层数构建索引；实现比平衡树简单，Redis 用它实现有序集合
 - **相关**：Linked List（链表）、Balanced Tree（平衡树）
-
 ### Sliding Window / 滑动窗口
 - **音标**：/ˈslaɪdɪŋ ˈwɪndoʊ/
 - **中文**：滑动窗口
 - **定义**：在数组或字符串上维护一个可变大小的子区间，通过移动边界解决问题的技术
 - **说明**：滑动窗口用于解决子数组/子串问题；分为固定窗口和可变窗口；典型问题：最小覆盖子串、最大子数组和、字符串排列
 - **相关**：Two Pointers（双指针）、Array（数组）
-
 ### Sparse Matrix / 稀疏矩阵
 - **音标**：/spɑːrs ˈmeɪtrɪks/
 - **中文**：稀疏矩阵
 - **定义**：绝大多数元素为零的矩阵，使用特殊结构存储非零元素
 - **说明**：稀疏矩阵用三元组（行、列、值）或压缩稀疏行（CSR）格式存储；节省大量空间；用于图邻接矩阵、机器学习特征矩阵
 - **相关**：Matrix（矩阵）、Compression（压缩）
-
 ### Stack / 栈
 - **音标**：/stæk/
 - **中文**：栈
@@ -229,49 +197,42 @@
 - **说明**：栈在栈顶（top）进行 push 和 pop 操作；应用：函数调用（调用栈）、表达式求值、括号匹配、DFS；可用数组或链表实现
 - **相关**：LIFO、Queue（队列）、Call Stack（调用栈）
 - **例句**：The call stack uses a stack data structure to manage function calls.
-
 ### Subarray / 子数组
 - **音标**：/ˈsʌbəreɪ/
 - **中文**：子数组
 - **定义**：数组中连续的一段元素序列
 - **说明**：子数组问题是算法面试高频考点；如最大子数组和（Kadane 算法）、和为 K 的子数组；与 subsequence（子序列）不同，子数组要求连续
 - **相关**：Substring（子串）、Subsequence（子序列）、Array（数组）
-
 ### Subsequence / 子序列
 - **音标**：/ˈsʌbsekwəns/
 - **中文**：子序列
 - **定义**：通过删除原序列中某些元素（不改变剩余元素顺序）得到的序列
 - **说明**：子序列不要求连续；最长公共子序列（LCS）和最长递增子序列（LIS）是经典 DP 问题
 - **相关**：Subarray（子数组）、Substring（子串）、Dynamic Programming（动态规划）
-
 ### Substring / 子串
 - **音标**：/ˈsʌbstrɪŋ/
 - **中文**：子串
 - **定义**：字符串中连续的一段字符序列
 - **说明**：子串是字符串的 subarray；字符串匹配算法（KMP、Rabin-Karp）用于查找子串
 - **相关**：Subarray（子数组）、String（字符串）
-
 ### Tail / 尾节点
 - **音标**：/teɪl/
 - **中文**：尾节点
 - **定义**：链表的最后一个节点
 - **说明**：尾节点的 next 指针为 null；维护尾指针可以在 O(1) 时间在尾部插入
 - **相关**：Head（头节点）、Linked List（链表）
-
 ### Top / 栈顶
 - **音标**：/tɒp/
 - **中文**：栈顶
 - **定义**：栈中最后插入的元素所在位置
 - **说明**：栈的 push 和 pop 操作都在栈顶进行；peek/top 操作查看栈顶元素但不移除
 - **相关**：Stack（栈）、Bottom（栈底）
-
 ### Traverse / 遍历
 - **音标**：/trəˈvɜːrs/
 - **中文**：遍历
 - **定义**：按一定顺序访问数据结构中的每个元素一次
 - **说明**：线性结构的遍历：顺序遍历（从头到尾）、反向遍历；数组和链表的遍历都是 O(n)
 - **相关**：Iteration（迭代）、Enumeration（枚举）
-
 ### Two Pointers / 双指针
 - **音标**：/tuː ˈpɔɪntərz/
 - **中文**：双指针
