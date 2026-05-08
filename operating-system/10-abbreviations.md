@@ -433,7 +433,9 @@
 
 ---
 
-## 按类别分类### 内存管理
+## 按类别分类
+
+### 内存管理
 - MMU: Memory Management Unit
 - TLB: Translation Lookaside Buffer
 - EPT: Extended Page Table
@@ -445,6 +447,7 @@
 - DRAM: Dynamic RAM
 - SRAM: Static RAM
 - COW: Copy-on-Write
+
 ### 安全
 - CIA: Confidentiality, Integrity, Availability
 - DAC: Discretionary Access Control
@@ -1660,6 +1663,7 @@
 | io_uring_register_sq_resv498: I/O Uring Register Submission Queue Reserved 498
 | io_uring_register_sq_resv499: I/O Uring Register Submission Queue Reserved 499
 | io_uring_register_sq_resv500: I/O Uring Register Submission Queue Reserved 500
+
 ### 文件系统
 - FAT: File Allocation Table
 - NTFS: New Technology File System
@@ -1669,6 +1673,7 @@
 - NFS: Network File System
 - SMB: Server Message Block
 - CIFS: Common Internet File System
+
 ### 虚拟化
 - VM: Virtual Machine
 - VMM: Virtual Machine Monitor
@@ -1677,6 +1682,7 @@
 - PVC: PersistentVolumeClaim
 - CRI: Container Runtime Interface
 - OCI: Open Container Initiative
+
 ### 进程与线程
 - PCB: Process Control Block
 - PID: Process Identifier
