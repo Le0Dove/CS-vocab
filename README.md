@@ -15,9 +15,9 @@
 | [计算机网络](computer-networks/) | 已完成 | 162 |
 | [计算机组成原理](computer-organization/) | 已完成 | 127 |
 | [数据库系统](database-systems/) | 已完成 | 213 |
-| 编译原理 | 待规划 | - |
-| 软件工程 | 待规划 | - |
-| 人工智能 | 待规划 | - |
+| [人工智能](artificial-intelligence/) | 已完成 | 360 |
+| [编译原理](compiler-principles/) | 已完成 | 240 |
+| [软件工程](software-engineering/) | 已完成 | 327 |
 
 ## 使用
 
